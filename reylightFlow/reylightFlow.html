@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="reylightFlow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="reylightFlow.js" defer></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../Assets/logo.jpg" alt="no image" class="logostyl"><span class="areocal">AERO CALCULATOR</span>
+        <div class="topnav-right">
+            <a href="../home/home .html">Home</a>
+            <a href="../AboutUs/about.html">About</a>
+            <a href="../contact/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="maincontentdiv">
+        <div class="sidenav">
+
+            <button class="dropdown-btn">Basics
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+
+            <div class="dropdown-container">
+                <a href="../TSA/tsa.html">TAS Calculator</a>
+                <a href="../lifeForcecal/lifeForce.html">Lift Force</a>
+                <a href="../dragForcecal/dragForce.html">Drag Force</a>
+                <a href="../centrifugalForceCal/centrifugalForce.html">Centrifugal Force</a>
+                <a href="../thrustForceCal/thrustForce.html">Thrust Force</a>
+                <a href="../reynoldsNumber/reynoldsNumber.html">Reynold number</a>
+
+            </div>
+            <button class="dropdown-btn">Heat Transfer
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../newtonsLaw/newtonsLaw.html">Newton's law</a>
+                <a href="../oneDimensionalHeatFlux/oneDimensionalHeatFlux.html">One dimensional Heat flux</a>
+                <a href="../blackBodyHeatExange/blackBodyHeatExange.html">Black body heat exchange radiation</a>
+                <a href="../heatrateFourierLaw/heatrateFourierLaw.html">Heat rate-Fouriers Law</a>
+
+
+            </div>
+            <button class="dropdown-btn">CFD
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../prandtlMayer/prandtlMayer.html">Prandtl meyer</a>
+                <a href="../skinFrictionCoefficient/skinFrictionCoefficient.html">Skin friction coefficient</a>
+                <a href="../isentropicFloweReaction/isentropicFloweReaction.html">Isentropic Flow Relation</a>
+                <a href="../obliqueshockRelations/obliqueshockRelations.html">Oblique Shock Relations</a>
+                <a href="../normalShockRelation/normalShockRelation.html">Normal shock Relation</a>
+                <a href="../reylightFlow/reylightFlow.html">Rayleigh Flow</a>
+            </div>
+            <button class="dropdown-btn">THERMODYNAMICS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../vanderWaals/vanderWaals.html">Van Der Waals</a>
+                <a href="../iseothermalWorkDone/iseothermalWorkDone.html">Isothermal Work Done By Gas</a>
+                <a href="../biotNumber/biotNumber.html">Biot Number</a>
+                <a href="../compressibilityFactor/compressibilityFactor.html">Compressibility Factor</a>
+                <a href="../gibbsFreeenergy/gibbsFreeenergy.html">Gibss Free Energy</a>
+                <a href="../boilingPoinTelevation/boilingPoinTelevation.html">Boiling Point Elevation</a>
+            </div>
+            <button class="dropdown-btn">STRENGTH OF MATERIALS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../totalAngleofTwist/totalAngleofTwist.html">Total angle of Twist</a>
+                <a href="../hooksLaw/hooksLaw.html">Hook's Law</a>
+                <a href="../elongationofcirculartapperedbar/elongationofcirculartapperedbar.html">Elongation of Circular
+                    tappered beam</a>
+                <a href="../deflectionoffixedbeamwithloadatcentre/deflectionoffixedbeamwithloadatcentre.html">Deflection
+                    of fixed beam with load at center</a>
+                <a
+                    href="../deflectionoffixedbeamwithuniformlydistributedload/deflectionoffixedbeamwithuniformlydistributedload.html">Deflection
+                    of fixed beam with uniformly distributed load</a>
+
+
+            </div>
+            <button class="dropdown-btn">FLIGHT DYNAMICS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../breguetrangeequation/breguetrangeequation.html">Breguet range equation</a>
+                <a href="../stallSpeed/stallspeed.html">Stall Speed</a>
+                <a href="../ISA/isa.html">ISA</a>
+                <a href="../csaTsaEsa/csaTsaEsa.html">CSA/TSA/ESA</a>
+            </div>
+        </div>
+
+
+        <div class="maincontent container">
+            <h1 class="tsahead">RAYLEIGH FLOW CALCULATOR</h1>
+            <p class="tsatext">The given below is the simple online REYNOLDS NUMBER calculator which helps you in the
+                fluid Flow
+                calculation with ease by
+                just entering the required inputs</p>
+
+            <p class="tsafull">RAYLEIGH FLOW CALCULATOR</p>
+
+            <div class="tsacal">
+                <div class="tsainputs">
+                    <form>
+                        <div id="rayleighFlow">
+                            <h2>Rayleigh Flow</h2>
+
+                            <p>Select the input quantity.
+                                Then type the value of the desired quantity in the input box.
+                                Finally, click (or tap) the Compute button to display the output.
+                                Illegal values will be flagged with error messages.</p>
+
+
+                            <table>
+                                <tr>
+                                    <th colspan=2>Input Quantity</th>
+                                    <th colspan=2>Output data</th>
+                                </tr>
+
+                                <tr> <!--  ROW 1  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighMachNumber"
+                                            oninput="RayleighHideResults();" checked="checked"></td>
+                                    <td class="col2"><label for="rayleighmachnumber">Mach Number</label></td>
+                                    <td class="col3">Mach number, M = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighMachNumberOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 2  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighSubsonicTtotal"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighSubsonicTtotal">
+                                            T<sub>t</sub>/T<sub>t</sub><sup>*</sup> (M &lt; 1)</label></td>
+                                    <td class="col3">total temperature ratio,
+                                        T<sub>t</sub> / T<sub>t</sub><sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighTtotalOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 3  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighSupersonicTtotal"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighSupersonicTtotal">
+                                            T<sub>t</sub>/T<sub>t</sub><sup>*</sup> (M &gt; 1)</label></td>
+                                    <td class="col3">static temperature ratio, T / T<sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighTstaticOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 4  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighSubsonicTstatic"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighSubsonicTstatic">
+                                            T/T<sup>*</sup> (M &lt; 0.85)</label></td>
+                                    <td class="col3">static pressure ratio, p / p <sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighStaticPressureRatioOutput">
+                                    </td>
+                                </tr>
+
+                                <tr> <!--  ROW 5  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighSupersonicTstatic"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighSupersonicTstatic">
+                                            T/T<sup>*</sup> (M &gt; 0.85)</label></td>
+                                    <td class="col3">total pressure ratio,
+                                        P<sub>t</sub> / P<sub>t</sub><sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighTotalPressureRatioOutput">
+                                    </td>
+                                </tr>
+
+                                <tr> <!--  ROW 6  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighStaticPressureRatio"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighStaticPressureRatio">
+                                            p/p<sup>*</sup></label></td>
+                                    <td class="col3">velocity ratio, V / V<sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighVelocityRatioOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 7  -->
+                                    <td><input type="radio" name="rayleighSelect"
+                                            id="rayleighSubsonicTotalPressureRatio" oninput="RayleighHideResults();"
+                                            value="mach"></td>
+                                    <td class="col2"><label for="rayleighSubsonicTotalPressureRatio">
+                                            P<sub>0</sub>/P<sub>0</sub><sup>*</sup> (M &lt; 1)</label></td>
+                                    <td class="col3">static density ratio, &rho; / &rho;<sup>*</sup> = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighStaticDensityRatioOutput">
+                                    </td>
+                                </tr>
+
+                                <tr> <!--  ROW 8  -->
+                                    <td><input type="radio" name="rayleighSelect"
+                                            id="rayleighSupersonicTotalPressureRatio" oninput="RayleighHideResults();"
+                                            value="mach"></td>
+                                    <td class="col2"><label for="rayleighSupersonicTotalPressureRatio">
+                                            P<sub>0</sub>/P<sub>0</sub><sup>*</sup> (M &gt; 1)</label></td>
+                                    <td class="col3">S<sub>max</sub> / R = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighEntropyOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 9  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighVelocityRatio"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighVelocityRatio">V/V<sup>*</sup></label></td>
+                                    <td class="col3">gamma = </td>
+                                    <td><input type="text" readonly size="10" id="rayleighGammaOutput"></td>
+                                </tr>
+
+                                <tr> <!--  ROW 10  -->
+                                    <td><input type="radio" name="rayleighSelect" id="rayleighDensityRatio"
+                                            oninput="RayleighHideResults();" value="mach"></td>
+                                    <td class="col2"><label for="rayleighDensityRatio">
+                                            &rho; / &rho;<sup>*</sup></label></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+
+
+
+                            <label for="rayleighvalue">Input value</label>
+                            <input type="text" class="inbox" size="10" oninput="RayleighHideResults();"
+                                name="rayleighField" id="rayleighvalue" value="0">
+                            <button id="RayleighFlowComputeButton" type="button"
+                                onclick="RayleighCompute();">Compute</button>
+
+
+                        </div> <!-- End of div id=rayleighFlow -->
+
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

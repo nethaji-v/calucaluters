@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="compressibilityFactor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="compressibilityFactor.js" defer></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../Assets/logo.jpg" alt="no image" class="logostyl"><span class="areocal">AERO CALCULATOR</span>
+        <div class="topnav-right">
+            <a href="../home/home .html">Home</a>
+            <a href="../AboutUs/about.html">About</a>
+            <a href="../contact/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="maincontentdiv">
+        <div class="sidenav">
+
+            <button class="dropdown-btn">Basics
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+
+            <div class="dropdown-container">
+                <a href="../TSA/tsa.html">TAS Calculator</a>
+                <a href="../lifeForcecal/lifeForce.html">Lift Force</a>
+                <a href="../dragForcecal/dragForce.html">Drag Force</a>
+                <a href="../centrifugalForceCal/centrifugalForce.html">Centrifugal Force</a>
+                <a href="../thrustForceCal/thrustForce.html">Thrust Force</a>
+                <a href="../reynoldsNumber/reynoldsNumber.html">Reynold number</a>
+
+            </div>
+            <button class="dropdown-btn">Heat Transfer
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../newtonsLaw/newtonsLaw.html">Newton's law</a>
+                <a href="../oneDimensionalHeatFlux/oneDimensionalHeatFlux.html">One dimensional Heat flux</a>
+                <a href="../blackBodyHeatExange/blackBodyHeatExange.html">Black body heat exchange radiation</a>
+                <a href="../heatrateFourierLaw/heatrateFourierLaw.html">Heat rate-Fouriers Law</a>
+
+
+            </div>
+            <button class="dropdown-btn">CFD
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../prandtlMayer/prandtlMayer.html">Prandtl meyer</a>
+                <a href="../skinFrictionCoefficient/skinFrictionCoefficient.html">Skin friction coefficient</a>
+                <a href="../isentropicFloweReaction/isentropicFloweReaction.html">Isentropic Flow Relation</a>
+                <a href="../obliqueshockRelations/obliqueshockRelations.html">Oblique Shock Relations</a>
+                <a href="../normalShockRelation/normalShockRelation.html">Normal shock Relation</a>
+                <a href="../reylightFlow/reylightFlow.html">Rayleigh Flow</a>
+            </div>
+            <button class="dropdown-btn">THERMODYNAMICS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../vanderWaals/vanderWaals.html">Van Der Waals</a>
+                <a href="../iseothermalWorkDone/iseothermalWorkDone.html">Isothermal Work Done By Gas</a>
+                <a href="../biotNumber/biotNumber.html">Biot Number</a>
+                <a href="../compressibilityFactor/compressibilityFactor.html">Compressibility Factor</a>
+                <a href="../gibbsFreeenergy/gibbsFreeenergy.html">Gibss Free Energy</a>
+                <a href="../boilingPoinTelevation/boilingPoinTelevation.html">Boiling Point Elevation</a>
+            </div>
+            <button class="dropdown-btn">STRENGTH OF MATERIALS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../totalAngleofTwist/totalAngleofTwist.html">Total angle of Twist</a>
+                <a href="../hooksLaw/hooksLaw.html">Hook's Law</a>
+                <a href="../elongationofcirculartapperedbar/elongationofcirculartapperedbar.html">Elongation of Circular
+                    tappered beam</a>
+                <a href="../deflectionoffixedbeamwithloadatcentre/deflectionoffixedbeamwithloadatcentre.html">Deflection
+                    of fixed beam with load at center</a>
+                <a
+                    href="../deflectionoffixedbeamwithuniformlydistributedload/deflectionoffixedbeamwithuniformlydistributedload.html">Deflection
+                    of fixed beam with uniformly distributed load</a>
+
+
+            </div>
+            <button class="dropdown-btn">FLIGHT DYNAMICS
+                <i class="fa fa-caret-down icon"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../breguetrangeequation/breguetrangeequation.html">Breguet range equation</a>
+                <a href="../stallSpeed/stallspeed.html">Stall Speed</a>
+                <a href="../ISA/isa.html">ISA</a>
+                <a href="../csaTsaEsa/csaTsaEsa.html">CSA/TSA/ESA</a>
+            </div>
+        </div>
+
+
+        <div class="maincontent container">
+            <h1 class="tsahead">COMPRESSIBILITY FACTOR CALCULATOR</h1>
+            <p class="tsatext">The given below is the simple online compressibility factor calculator which helps you in
+                the fluid Flow
+                calculation with ease by
+                just entering the required inputs</p>
+
+            <p class="tsafull">COMPRESSIBILITY FACTOR CALCULATOR</p>
+
+            <div class="tsacal">
+                <div class="tsainputs">
+                    <form>
+                        <h3 class="inputslable">Pressure(p)</h3>
+                        <input type="number" class="tsaindicated" id="inputairspeed">Pa
+                        <h3 class="inputslable">Volume(V)</h3>
+                        <input type="number" class="tsaindicated" id="inputaltitude">m<sup>3</sup>
+                        <h3 class="inputslable">No. Of Moles Of Gas(n)</h3>
+                        <input type="number" class="tsaindicated" id="inputoat">mol
+                        <h3 class="inputslable">Absolute Temperature Of Gas(T)</h3>
+                        <input type="number" class="tsaindicated" id="inputarea">K
+
+                        <div>
+                            <!-- <input type="submit" value="Calculate" class="btncal" onclick="tsacalculate()"> -->
+                            <button class="btncal" type="button" onclick="tsacalculate()">Calculate</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tsainputs">
+                    <form>
+                        <h3 class="inputslable">Result</h3>
+                        <input type="number" class="tsaindicated" id="tsaresult">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

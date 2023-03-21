@@ -1,0 +1,141 @@
+.tsatext{
+    margin: 20px 0px 20px 30px;
+    font-size: 25px;
+}
+
+.tsahead{
+    margin: 10px;
+}
+
+.logostyl{
+    width: 90px;
+    padding: 10px;
+}
+
+.tsafull{
+    width: 200px;
+    padding: 10px;
+    margin: 30px 20px 20px 60px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0096ff;
+    text-align: center;
+}
+
+.tsainputs{
+    border: 1px solid black;
+    /* width: fit-content; */
+    padding: 20px 30px 20px 30px;
+    margin-left: 10px;
+}
+
+.tsacal{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputslable{
+    margin: 10px;
+    color: #0096ff;
+}
+
+.tsaindicated{
+    margin: 10px;
+    padding: 5px;
+    width: 400px;
+}
+
+.btncal{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0096ff;
+    text-align: center;
+    margin: 20px;
+    margin-left: 350px;
+    border: none;
+}
+
+.maincontent{
+    height: 1000px;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .tsacal{
+    display: block;
+  }
+  .tsainputs{
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .tsaindicated{
+    width: 525px;
+  }
+  .btncal{
+    margin-left: 450px;
+  }
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .tsacal{
+        display: block;
+      }
+      .tsainputs{
+        margin: 10px;
+        margin-top: 20px;
+      }
+      .tsaindicated{
+        width: 525px;
+      }
+      .btncal{
+        margin-left: 450px;
+      }
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+    .tsacal{
+        display: block;
+      }
+      .tsainputs{
+        margin: 10px;
+        margin-top: 20px;
+      }
+      .tsaindicated{
+        width: 525px;
+      }
+      .btncal{
+        margin-left: 450px;
+      }
+}
+
+@media screen and (min-device-width: 540px)
+and (orientation: portrait) {
+    .tsacal{
+        display: block;
+      }
+      .tsainputs{
+        margin: 10px;
+        margin-top: 20px;
+      }
+      .tsaindicated{
+        width: 525px;
+      }
+      .btncal{
+        margin-left: 450px;
+      }
+}
+
+
+
+
